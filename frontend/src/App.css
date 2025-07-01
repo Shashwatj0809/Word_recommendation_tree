@@ -1,0 +1,109 @@
+/* Center entire content on page */
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000; /* Ensure text is black globally */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Main app container */
+.App {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 32px 24px;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 420px;
+  width: 100%;
+  color: #000; /* Black text */
+}
+
+/* Header styling */
+h1 {
+  margin-bottom: 28px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px #e0eafc;
+  color: #000;
+}
+
+/* Input field */
+input {
+  padding: 10px 14px;
+  font-size: 1.1rem;
+  width: 260px;
+  border: 1.5px solid #b2becd;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 12px;
+  background: #f5f8fa;
+  color: #000;
+  transition: border 0.2s;
+}
+
+input:focus {
+  border-color: #6c63ff;
+  background: #f0f4ff;
+}
+
+/* Suggestions container */
+.suggestions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Suggestion buttons */
+.suggestions button {
+  margin: 0;
+  padding: 7px 18px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #6c63ff 60%, #48c6ef 100%);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(76, 110, 245, 0.08);
+  transition: background 0.2s, transform 0.1s;
+}
+
+.suggestions button:hover {
+  background: linear-gradient(90deg, #48c6ef 0%, #6c63ff 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Mind map list */
+.mindmap {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 28px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mindmap li {
+  background: #f0f4ff;
+  color: #000;
+  padding: 9px 22px;
+  margin: 6px 0;
+  border-radius: 7px;
+  font-size: 1.07rem;
+  box-shadow: 0 1px 4px rgba(76, 110, 245, 0.06);
+  min-width: 120px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
